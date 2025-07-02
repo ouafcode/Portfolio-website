@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Ouafae Saim</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Ouafae Saim</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="pic-container">
+        <img
+          src="./assets/profile.png"
+          alt="Ouafae Saim Profile Picture"
+          class="profile-img"
+        />
+      </div>
+      <div class="section_text">
+        <p class="text_p1">Hello, I'm</p>
+        <h1 class="title">Ouafae Saim</h1>
+        <p class="text_p2">Full Stack Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CV_EN_28042025.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png
+            
+            "
+            alt="My Linkedin profile"
+            class="icon"
+            onclick="location.href=`https://linkedin.com/in/ouafae-saim`"
+          />
+          <img
+            src="./assets/github.png
+            
+            "
+            alt="My github profile"
+            class="icon"
+            onclick="location.href=`https://github.com/ouafcode`"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="text_p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="pic-container">
+          <img
+            src="./assets/ouafae3.png"
+            alt="Profile Picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="experience icon"
+                class="icon"
+              />
+              <h3>Certification</h3>
+              <p>
+                Software Engineering <br />
+                ALX program
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                Engineer <br />
+                GeoInformation
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Background in providing advanced technical support for GIS
+              software and drone technologies, including troubleshooting, user
+              training, and solution implementation. Recently completed an
+              intensive Software Engineering program,, gaining strong skills in
+              backend development . Motivated to grow as a software developer,
+              leveraging a mix of technical support expertise and practical
+              programming skills to build robust, user-focused applications
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="text_p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Developement</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience
+                icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience
+                icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience
+                icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience
+                icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience
+                icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Developement</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience
+                icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience
+                icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>NodeJS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience
+                icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ExpressJS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience
+                icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience
+                icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Mongo DB</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">GIS Developement</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience
+                icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Geoserver</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience
+                icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Leaflet</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience
+                icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ArcGIS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience
+                icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>QGIS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience
+                icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostGIS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="text_p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div id="myBtnContainer">
+          <!-- <button class="btn-glr active" onclick="filterSelection('all')">
+            Show all
+          </button> -->
+          <button class="btn-glr active" onclick="filterSelection('backend')">
+            Backend
+          </button>
+          <button class="btn-glr" onclick="filterSelection('frontend')">
+            Frontend
+          </button>
+          <button class="btn-glr" onclick="filterSelection('webmapping')">
+            WebMapping
+          </button>
+        </div>
+        <div class="about-containers">
+          <div class="column backend project-details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/E-com2.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              E-commerce RESTFul APi
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href=`https://github.com/ouafcode/Portfolio-Project-E-commerce-RESTful-APIs-.git`"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href=`https://documenter.getpostman.com/view/38120701/2sAXqs72gn`"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="column backend project-details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/task.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Task Manager</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href=`https://github.com/ouafcode/task-manager.git`"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href=`https://task-manager-y2nc.onrender.com`"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="column backend project-details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/file2.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              API File Metadata
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href=`https://github.com/ouafcode/API-File-Metadata-Microservice.git`"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href=`https://github.com/ouafcode`"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="column frontend project-details-container color-container"
+          >
+            <div class="article-container">
+              <img
+                src="./assets/frontend1.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Portfolio Web Page
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href=`https://github.com/ouafcode/HTML-CSS-Template.git`"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href=`https://ouafcode.github.io/HTML-CSS-Template/`"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div
+            class="column frontend project-details-container color-container"
+          >
+            <div class="article-container">
+              <img
+                src="./assets/frontend2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Portfolio web Page 2
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href=`https://github.com/ouafcode/HTML-CSS-Template2.git`"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href=`https://ouafcode.github.io/HTML-CSS-Template2/`"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="column webmapping project-details-container color-container"
+          >
+            <div class="article-container">
+              <img
+                src="./assets/webMap.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Market Analytics App
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href=`https://github.com/ouafcode/geo-market-app.git`"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                s
+                onclick="location.href=`https://ouafcode.github.io/geo-market-frontend/`"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!-- <div
+            class="column webmapping project-details-container color-container"
+          >
+            <div class="article-container">
+              <img
+                src="./assets/webMap2.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href=`https://github.com/ouafcode`"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href=`https://github.com/ouafcode`"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <section id="contact">
+      <p class="text_p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:ouafaesaim@gmail.com">ouafaesaim@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="Linkedin icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/ouafae-saim/">Linkedin Link</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Ouafae Saim. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
